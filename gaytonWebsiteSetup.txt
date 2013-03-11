@@ -1,0 +1,40 @@
+Gayton Primary Website Details
+
+
+Plesk Login
+server:     http://plesk1.nsix.org.uk/
+username:   gayton.norfolk.sch.uk
+password:   puGUy52r
+
+
+
+ftp
+server:     www.gayton.norfolk.sch.uk
+username:   gpsJoomla
+password:   gaytonPrimary
+
+
+database : mySQL
+plesk config:       http://plesk1.nsix.org.uk/domains/databases/db_edit.php3?db_id=72
+
+hostname:   plesk1.nsix.org.uk
+database:   wp_0496
+username:   wp_0496
+password:   0496gtn10
+
+
+Norfolk CC contact:
+Paul Hurst
+Web Services Officer
+ICT Shared Services Resources
+
+Norfolk County Council
+County Hall
+Martineau Lane
+Norwich
+NR1 2DH
+
+Tel: 0845 303 3003
+Fax: 01603 475624
+Email: paul.hurst@norfolk.gov.uk
+Web: http://www.ict.norfolk.gov.uk

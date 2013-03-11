@@ -1,0 +1,59 @@
+#bsaPanel {
+	font-size: 80%;
+	text-align: center;
+}
+#myNavigation {
+	border: 1px solid #dfdfdf;
+	background: #eaeaea;
+	margin: 2px;
+	padding: 2px;
+	width: 95%;
+	text-align: left;
+	}
+#myNavigationTop {
+	border: 1px solid #dfdfdf;
+	background: #ffffff;
+	margin: 2px;
+	padding: 2px;
+	width: 95%;
+	}
+#myNavigation ul li{
+	display: inline-block;
+	}
+
+#myNavigation ul li a:link{
+	color: #2727ac;
+	text-decoration: none;
+	background: url(/bsa/bsaCSS/images/legendBack.png);
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	margin: 1px 2px 1px 2px;
+	width: 125px;
+	border: 1px solid #cacaca;
+	}
+
+#myNavigation ul li a:visited{
+	color: #2727aa;
+	text-decoration: none;
+	border: 1px solid #cacaca;
+	}
+#myNavigation ul li a:hover{
+	color: #2727ac;
+	background: #cfcfcf;
+	background-image:none
+	text-decoration: underline;
+	border: 1px solid #cacaca;
+	}
+#myNavigation ul li a:active{
+	color: #aa2727;
+	text-decoration: none;
+	border: 1px solid #cacaca;
+	}
+
+
+	
+#footer {
+	margin: 80px 0 0 0;
+	font-size: 80%;
+}
+

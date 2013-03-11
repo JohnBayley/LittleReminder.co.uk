@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html dir="ltr" lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>Little Reminder Lost Password Recovery</title>
+    <style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+}
+#ft {
+	background: #acacac;
+	font-size: 8pt;
+	color: #efefef;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+}
+
+h1, h1:link {
+	padding: 20px;
+	color: #ac0505;
+}
+
+#bd {
+  font-size: 12pt;
+  color: #373737;
+  font-family: arial, helvetica, clean, sans-serif;
+  text-align: left;
+  padding: 20px;
+}
+</style>
+	<meta content="John Bayley" name="author">
+	<meta content="Lost Password Recovery" name="description">
+	<meta content="Lost Password Recovery" name="keywords">
+</head>
+<body>
+	<div id="hd">
+		<h1>Little Reminder Lost Password Recovery<br>
+		</h1>
+	</div>
+	<div id="bd">Hello {realname},<br />
+		<br />&nbsp;
+		You have requested password recovery from <a href="http://www.littlereminder.co.uk">www.littlereminder.co.uk</a>&nbsp;
+		to reset the password and enable access to the system. In case you do
+		not have it, your username is <span style="font-weight: bold;">{username}</span>
+		<br />&nbsp;
+		<br />&nbsp;
+		If you wish to continue and reset your password then click <a href="{recoverLink}">here
+		to go to the recovery page</a>.
+		<br />&nbsp;
+		Alternatively you can copy and past the link below into your web
+		browser.
+		<br />&nbsp;
+		<br />&nbsp;
+		{recoverLink}
+		<br />&nbsp;
+		<br />&nbsp;
+		Thanks
+		<br />&nbsp;
+		<br />&nbsp;
+		Reminders Team<br>
+		<br>
+		<br>
+	</div>
+	<div id="ft">
+		<address>LittleReminder.co.uk &copy;2007-2012 John R. Bayley </address>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html dir="ltr" lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>Little Reminder Account Confirmation</title>
+    <style type="text/css">
+html, body {
+	padding: 0px;
+	margin: 0px;
+}
+#ft {
+	background: #acacac;
+	font-size: 8pt;
+	color: #efefef;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+}
+
+h1, h1:link {
+	padding: 20px;
+	color: #ac0505;
+}
+
+#bd {
+  font-size: 12pt;
+  color: #373737;
+  font-family: arial, helvetica, clean, sans-serif;
+  text-align: left;
+  padding: 20px;
+}
+</style>
+	<meta content="John Bayley" name="author">
+	<meta content="Account Confirmation" name="description">
+	<meta content="Account Confirmation" name="keywords">
+</head>
+<body>
+	<div id="hd">
+		<h1>Litte Reminder Account Confirmation<br>
+		</h1>
+	</div>
+	<div id="bd">Hello {realname},<br />
+		<br />&nbsp;
+		Thank you for registering at LitteReminder.co.uk
+		<br />&nbsp;
+		You must confirm your email address to activate your account. Follow the instructions here to complete the automatic confirmation process and you will have immediate access to the reminder system.
+		<br />&nbsp;
+		<br />&nbsp;
+		If you wish to continue and  then click <a href="{confirmLink}">to confirm your account</a>.
+		<br />&nbsp;
+		Alternatively you can copy and past the link below into your web browser.
+		<br />&nbsp;
+		<br />&nbsp;
+		{confirmLink}
+		<br />&nbsp;
+		<br />&nbsp;
+		Thanks
+		<br />&nbsp;
+		<br />&nbsp;
+		Reminder Team<br>
+		<br>
+		<br>
+	</div>
+	<div id="ft">
+		<address>www.LitteReminder.co.uk &copy;2007-2012 John R. Bayley </address>
+	</div>
+</body>
+</html>

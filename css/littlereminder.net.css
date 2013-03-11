@@ -1,0 +1,1448 @@
+/********************************************
+
+
+
+/* top elements */
+* 	{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ffffff;
+	font: 70%/1.5em helvetica, arial, sans-serif;
+	color: #404040;
+	width: 100%;
+}
+
+/* links */
+a, a:visited {
+	text-decoration: none;
+	background: inherit;
+	color: #ac0505;
+}
+a:hover {
+	text-decoration: underline;
+	background: inherit;
+	color: #122db0;
+}
+
+/* headers */
+h1, h2, h3 {
+	margin: 10px 10px 10px 0px;
+	padding: 0;
+}
+h1 {
+	font-size: 180%;
+	font-weight: normal;
+	color: #555;
+}
+
+h2 {
+	font-size: 160%;
+	color: #ac0b0b;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 135%;
+	color: #122db0;
+}
+
+hr {
+	margin-left: 10px;
+}
+
+
+img {
+    border: none;
+}
+
+p.note {
+	margin: 10px 15px 10px 25px;
+	padding: 0 0 0 65px;
+	font: bold 1.3em/1.5em;
+	color: #2361BA;
+	border: 1px solid #E5F0FB;
+	background: #F4F8FD url(/images/warn.gif) no-repeat 8px 6px;
+}
+
+legend{
+	border: 1px solid #909090;
+	color:  #292929;
+	padding: 2px 10px 2px 10px;
+	background: url(images/legendBack.png);
+	margin-left: 10px;
+
+}
+
+/*Main layout */
+#maincontent {
+	position:relative;
+	text-align:left;
+	width:100%;
+	height: 100%;
+	display: block;
+	}
+#wrapperBody {
+	height: 100%;
+	}
+#wrapperfooter {
+	overflow:auto;
+	padding-bottom: 75px;
+	height: 100%;
+	}
+#footer {
+	position: relative;
+	margin-top: -50px; /* negative value of footer height */
+	height: 50px;
+	clear:both;
+	padding: 15px 0px 15px 0px;
+	text-align: center;
+	background: url(images/authFooter_warm_70.png);
+	color: #cdcdcd;
+	}
+
+#maincolumn {
+	position:relative;
+	margin:0;
+	padding:10px;
+	border: 1px solid #9a9a9a;
+	min-width: 800px;
+	}
+#leftcolumn {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	float: left;
+	width: 170px;
+	min-height: 400px;
+	margin: 5px 0px 0px 2px;
+	padding: 5px;
+	background:#f5f5f5;
+	border: 1px solid #9a9a9a;
+	z-index:100;
+	}
+#rightcolumn {
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	width: 220px;
+	min-height: 400px;
+	margin: 0px 0px 0px 2px;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #9a9a9a;
+	z-index:99;
+	font-size: 110%;
+	}
+#centercolumn {
+    height: 100%;
+    }
+
+#centercolumnText {
+    margin: 5px 240px 20px 20px;
+    font-size: 130%;
+    border: 1px solid #ededed;
+}
+#centercolumnText p{
+    margin: 2px 10px 2px 5px;
+}
+#centercolumnText h3{
+    margin-left: 5px;
+}
+#centercolumnText ul{
+    margin: 10px 10px 10px 40px;
+}
+#centercolumnText td{
+    vertical-align: top;
+}
+#index {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	background: #ffffff;
+}
+#index div{
+	width: 800px;
+	margin: auto;
+	font-size: 140%;
+	vertical-align: top;
+	background: #ffffff;
+	padding: 40px;
+	text-align: left;
+	color: #787878;
+}
+
+#index .rightButton{
+	float: right;
+	border: none;
+	margin: 10px;
+}
+
+#header {
+	position: relative;
+	height: 48px;
+	width: 100%;
+	background: url(/images/greyHeaderBack.png) repeat-x;
+}
+
+#headerLogo {
+	height: 48px;
+	width: 294px;
+	position: absolute;
+	background: url(/images/headerLogo.png);
+
+}
+
+#headerLogo a {
+	background: none;
+	position: relative;
+	top: 20px;
+	left: 33px;
+	font-size: 180%;
+	color: #ffffff;
+}
+
+#header #calendarText {
+	position: absolute;
+	left: 47%;
+	top: 15px;
+	font-size: 18pt;
+}
+
+#headersml {
+	position: relative;
+	height: 45px;
+	background: #7c0101;
+	padding: 0;
+	margin: 0;
+	color: #ffffff;
+}
+#headersml img {
+	height: 45px;
+	position: absolute;
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 0px; left: 25px;
+	border: none;
+}
+
+/* header links */
+#header #headerLinks {
+	position: absolute;
+	font: 12px;
+	top: 5px; right: 10px;
+	text-align: right;
+	color: #545454;
+}
+#header #headerLinks a {
+	color: #ac0505;
+	text-decoration: none;
+}
+#header #headerLinks a:hover {
+	color: #122db0;
+}
+
+#header #headerLinks p {
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+#header #headerLinks a img{
+	vertical-align: middle;
+}
+#header #reminderLinks {
+	position: absolute;
+	font: 12px;
+	top: 5px; left: 220px;
+	text-align: left;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+#header #reminderLinks a {
+	color: #373737;
+	text-decoration: none;
+}
+#header #reminderLinks a:hover {
+	color: #ac0707;
+}
+
+#breadCrumb {
+	position: absolute;
+	font: 9px;
+	top: 30px; left: 220px;
+	text-align: left;
+    color: #000000;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* navigation */
+#menuwrap {
+	width: 1024px;
+	background: #fff url(/images/bar_back_sml.png) repeat-x;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0px;
+}
+
+#menu {
+	clear: both;
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	background: #fff url(/images/navigationBackground.png) repeat-x;
+	height: 30px;
+	font-size: 140%;
+	min-width: 700px;
+
+
+}
+#menu table {
+	list-style: none;
+	margin:0; padding: 4 0 0 30px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#menu td {
+	width: 200px;
+}
+#menu  a {
+	display: block;
+	float: left;
+	padding: 0 24px;
+	color: #fff;
+	text-decoration: none;
+}
+#menu div {
+	padding-top: 7px;
+
+}
+#menu  div a {
+	display: inline;
+	float: none;
+	padding: 0px 0px 0px 30px;
+	color: #fffff;
+	text-decoration: none;
+}
+
+#menu  div a:hover{
+	text-decoration: underline;
+}
+
+#wrap {
+	background: #ffffff;
+	text-align: left;
+	height: 90%;
+	padding: 2px;
+}
+
+#content{
+	background: #ffffff;
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+
+#mainTable {
+    margin: 0px 180px 0px 185px;
+	padding: 0px;
+}
+
+#mainTable table{
+	font-size: 110%;
+	border-collapse: collapse;
+	width: 95%;
+	min-width: 400px;
+}
+#mainTable th {
+	border: 1px solid #dcdcdc;
+	color: #ffffff;
+	background: #373737;
+	font-size: 100%;
+	font-weight: bold;
+	padding: 2px;
+}
+#mainTable td {
+	border: 1px solid #dcdcdc;
+	padding: 2 5 2 5;
+	text-align: center;
+	font-size: 90%;
+}
+
+#mainTable td.no, th.no{
+	width: 30px;
+	padding: 0 2 0 5;
+}
+
+#mainTable td.description, th.description{
+	width: 40%;
+	padding: 0 2 0 5;
+	text-align: left;
+}
+
+#mainTable td.date, th.date{
+	width: 10%;
+	padding: 0 5 0 5;
+	color: #237923;
+}
+
+#mainTable td.status, th.status{
+	width: 5%;
+	padding: 0 2 0 5;
+}
+
+#mainTable td.count, th.count{
+	width: 5%;
+	padding: 0 2 0 5;
+}
+
+#mainTable td.actions, th.actions{
+	width: 70px;
+	padding: 0 2 0 5;
+}
+
+#mainTable td.block, th.block{
+	width: 70px;
+	padding: 0 2 0 5;
+}
+
+
+#mainTable td.Active {
+	background: #efffef;
+}
+#mainTable td.Expired {
+	background: #ffefef;
+}
+#leftBar {
+    background: #dedede;
+    color: #ac0505;
+}
+.searchHit {
+    color: #ac0505;
+    font-weight: bold;
+}
+#leftBar .titleBar {
+	padding: 3px;
+	margin: 5 0 0 0;
+	text-align: center;
+	background: #ac0505;
+	color: #ffffff;
+	font-size: 110%;
+}
+#leftBar .linkHolder {
+	margin: 1px;
+	border: 1px solid #cdcdcd;
+	padding: 3px;
+	height: 400px;
+	text-align: left;
+	font-size: 90%;
+}
+
+.leftSearch {
+	width: 145px;
+	padding: 0;
+	margin: 0px;
+}
+
+#main {
+	margin-right: 250px;
+	float: left;
+	padding: 20px;
+	width: 57%;
+}
+
+#main a, #main a:visited {
+	text-decoration: none;
+	background: inherit;
+	color: #ac0505;
+}
+#main a:hover {
+	text-decoration: underline;
+	background: inherit;
+	color: #ac0505;
+	font-weight: bold;
+}
+
+#main h2 {
+	font: normal 180%;
+	padding: 0;
+	margin-bottom: 0;
+	color: #ac0505;
+}
+#main h2 a {
+	color: #2666c3;
+	text-decoration: none;
+}
+
+#main p, #main h1, #main h2, #main h3, #main ol, #main ul,
+#main blockquote {
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 25px;
+}
+#main ul li {
+	list-style-image: url(bullet.gif);
+}
+
+#main p.logoHolder {
+	text-align: center;
+	margin-top: 75px;
+}
+
+#main table.bordered{
+	margin: 20px;
+	padding: 20px;
+	border:	1px solid #a70101;
+	width: 100%;
+}
+
+#main td.half{
+	width: 50%;
+	vertical-align: top;
+}
+
+#main span.bhead{
+	font-size: 130%;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+#reminderList {
+	width: 200px;
+	float: right;
+	background: #ffffff;
+	height: 100%;
+
+}
+#currentRemindersHolder {
+	height: 60%;
+	position: relative;
+}
+#currentRemindersHolderYear {
+	height: 550px;
+	position: relative;
+}
+#currentReminders {
+	height: 90%;
+	width: 196px;
+	background: #ac0707;
+	font-size: 100%;
+	position: absolute;
+	top: 50px;
+	padding-left: 4px;
+	color: #e0e0e0;
+	overflow: auto;
+	scrollbar-track-color: #ac0707;
+}
+#currentReminders img{
+	height: 12px;
+	width: 12px;
+}
+#currentReminders .rmActive{
+    color: #e0ffe0;
+}
+#currentReminders .rmExpired{
+    font-size: 90%;
+    color: #acacac;
+}
+#currentReminders .rmArchived{
+    font-size: 90%;
+    color: #292977;
+}
+#currentReminders .rmDisabled{
+    font-size: 90%;
+    color: #790101;
+}
+#currentReminderTools {
+	height: 15px;
+	width: 160px;
+	background: none;
+	font-size: 90%;
+	position: absolute;
+	bottom: 4px;
+	padding: 4px;
+	margin: 0px 19px 0px 19px;
+	color: #e0e0e0;
+	z-index: 10;
+	text-align: center;
+}
+#currentReminderToolsHolder {
+	height: 140px;
+	width: 160px;
+	background: #acacac;
+	font-size: 90%;
+	color: #292929;
+	position: absolute;
+	bottom: 4px;
+	padding: 4px;
+	margin: 0px 19px 0px 19px;
+	z-index: 20;
+	display: none;
+}
+#currentReminderToolsHolder fieldset {
+    padding: 8px 8px 0px 8px;
+}
+#currentReminders a, #currentReminderTools a{
+	color: #cccccc;
+}
+
+#currentReminders a:hover, #currentReminderTools a:hover{
+	color: #ededed;
+}
+#currentRemindersHead {
+	width: 200px;
+	background: #ffffff url(/images/rreminder_top200.png);
+	height: 50px;
+	vertical-align: top;
+	top: 0px;
+}
+
+#quickRemindersHolder {
+	height: 40%;
+	width: 200px;
+	position: relative;
+	}
+#quickRemindersHead {
+	width: 200px;
+	background: #ffffff url(/images/rnewreminder_top200.png);
+	height: 50px;
+	vertical-align: top;
+}
+#quickReminders {
+	font-size: 140%;
+	background: #ac0707;
+	padding-left: 10px;
+	overflow: auto;
+}
+.remindersBottom {
+	position: absolute;
+	width: 200px;
+	background: #ffffff url(/images/rreminder_bottom200.png);
+	height: 34px;
+	bottom: 0;
+}
+
+#formHolder{
+	border: 1px solid #dfdfdf;
+}
+
+#formHolder table {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid #dfdfdf;
+	border-collapse: collapse;
+}
+
+#formHolder td {
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 20px;
+}
+
+#formHolder h3 {
+	color: #a70101;
+	text-decoration: none;
+	font-size: 180%;
+}
+
+#formHolder th {
+	background: url(/images/navigationBackground.png) repeat-x;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px;
+
+}
+
+#info {
+  width: 67%;
+  margin: 0 210 0 150;
+  padding: 1% 2%;
+  text-align: left;
+  font-size: 120%;
+}
+
+
+
+#info a, #info a:visited {
+	text-decoration: none;
+	background: inherit;
+	color: #ac0505;
+}
+#info a:hover {
+	text-decoration: underline;
+	background: inherit;
+	color: #ac0505;
+	font-weight: bold;
+}
+
+#info h1 {
+	font: normal 220% 'Trebuchet MS', Tahoma, Arial, Sans-serif;
+	padding: 0;
+	margin-bottom: 0;
+	color: #55555;
+}
+#info h2 {
+	font: normal 200% 'Trebuchet MS', Tahoma, Arial, Sans-serif;
+	padding: 0;
+	margin-bottom: 0;
+	color: #a70101;
+}
+#info h2, h3, a {
+	color: #a70101;
+	text-decoration: none;
+}
+
+#info h2, h3 {
+	margin-top: 30px;
+}
+
+#info p {
+	margin-left: 10px;
+}
+
+#info p.logoHolder {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#info p.userHelp {
+	margin-top: 50px;
+	font-size: 90%;
+}
+
+#info img.userHelp{
+	vertical-align: middle;
+	}
+
+#sidebar {
+	text-align: left;
+  	padding: 5px;
+  	margin: 0px;
+	color: #292929;
+	border: 1px solid #565656;
+	background: #ededed;
+	font-size: 100%;
+	float: right;
+	width: 210px;
+	min-height : 390px;
+
+}
+
+#sidebar a, #main a:visited {
+	text-decoration: none;
+	background: inherit;
+	color: #ac0505;
+	font-size: 110%;
+	font-weight: bold;
+}
+#sidebar a:hover {
+	text-decoration: underline;
+	background: inherit;
+	color: #ac0505;
+	font-weight: bold;
+}
+
+#sidebar h3 {
+	font: normal 150% 'Trebuchet MS', Tahoma, Arial, Sans-serif;
+	padding: 0;
+	margin: 3px;
+	color: #ac0505;
+}
+#sidebar h3 a {
+	color: #2666c3;
+	text-decoration: none;
+}
+
+#sidebar hr {
+	margin: 10px;
+}
+
+#sidebar p{
+	margin: 0px;
+	padding: 3px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+#sidebar p.blockUpdate {
+	margin: 2px;
+	padding: 3px;
+	border: 1px solid #efefef;
+}
+
+
+
+.infoIcon {
+	float: right;
+}
+
+#infoBox {
+	font-size: 120%;
+	border: 1px solid #ac0505;
+	padding: 10px;
+	width: 400px;
+}
+
+#manageList {
+	border: 1px solid #292929;
+	background: #ffffff;
+	color: #373737;
+}
+#manageList p{
+	margin: 0 0 5 0;
+}
+
+.manageImage {
+	padding-left: 40px;
+	padding-right: auto;
+}
+
+hr.cleaner {
+	clear:both;
+	height:1px;
+	margin: -1px 0 0 0; padding:0;
+	border:none;
+	visibility: hidden;
+	}
+
+#calendarHolder{
+	position: relative;
+	background: #000000;
+	margin-right: 205px;
+	height: 100%;
+	-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;
+}
+
+#calendarHolder .monthVertical{
+	float: left;
+	position: absolute;
+	top: 25%;
+	width: 67px;
+}
+
+#calendarMain{
+	background: #ffffff;
+	border: 1px solid #797979;
+	border-collapse: collapse;
+	text-align: center;
+	margin: 4 4 0 0;
+	float: right;
+}
+
+
+#calendarMain .day{
+	border: 1px solid #e7e7e7;
+	background: #797979;
+	color: #ffffff;
+	height: 15px;
+}
+
+#calendarMain td{
+	width: 10%;
+	height: 16%;
+	border: 1px solid #797979;
+	empty-cells: show;
+	vertical-align: top;
+}
+
+#calendarMain .dateBox, #clip, #edit, #wpb{
+	color: #122db0;
+
+}
+
+#calendarMain .dateExt {
+	color: #dedede;
+	background: #fafafa;
+}
+
+#calendarMain .datePast {
+	color: #dedede;
+	background: #ededed;
+}
+#calendarMain .todayHighlight {
+	background: #9797ff;
+	color: #ffffff;
+	font-size: 80%;
+}
+
+
+#logimage {
+	float: right;
+
+}
+
+#timeoutImage, #alertImage{
+	float: left;
+	margin: 40 40 0 40;
+}
+
+
+
+#loginbody p{
+	color: #ac0707;
+	margin: 0 0 30 0;
+}
+
+#loginButton{
+	margin: 0px auto;
+	padding: 10px;
+	height: 25px;
+	width: 90px;
+}
+
+.password{
+	border: 1px solid #898989;
+	padding: 2px;
+	font-size: 90%;
+	color: #575757;
+	margin-left: 15px;
+	width: 75%;
+}
+
+.required{
+	border: 2px solid #ac0707;
+	height: 22px;
+}
+
+.dateind {
+	width: 100%;
+	background: #ffefef;
+	font-size: 110%;
+	color: #ac0505;
+	text-align: left;
+	margin-bottom: 3px;
+}
+
+.dateindPast {
+	width: 100%;
+	background: #e2e2e2;
+	font-size: 90%;
+	color: #595959;
+	text-align: left;
+	margin-bottom: 3px;
+}
+
+#userAdminHead table{
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 100%;
+}
+
+#userAdminHead th{
+	background: #737373;
+	color: #ffffff;
+}
+
+#userAdminHead td{
+	border: 1px solid #adadad;
+}
+#userAdminBody table{
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 100%;
+		margin-top: 30px;
+}
+
+#userAdminBody th{
+	background: #737373;
+	color: #ffffff;
+}
+
+#userAdminBody td{
+	border: 1px solid #adadad;
+}
+
+table.editBody
+{
+	margin-left: 60px;
+	margin-top: 18px;
+}
+
+td.editBody
+{
+	color: #ac0101;
+	width: 270px;
+	font-size: 10pt;
+}
+
+#summaryL table
+{
+	border: 1px solid #9a9a9a;
+	float: left;
+}
+
+#summaryR table
+{
+	border: 1px solid #9a9a9a;
+	float: right;
+}
+
+#homepage table
+{
+	width: 100%;
+	border: 1px solid #dadada;
+	border-collapse: collapse;
+}
+
+#homepage th
+{
+	width: 50%;
+	background: #ac0101;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #dadada;
+}
+
+.headHelper{
+	background: #acacac;
+}
+#homepage td
+{
+	width: 50%;
+	padding: 5px;
+	border: 1px solid #dadada;
+	font-size: 80%;
+	vertical-align: top;
+}
+
+#homepage #esum table
+{
+	width: 100%;
+	border: none;
+}
+
+#homepage #esum td
+{
+	padding: 1px;
+	border: none;
+	width: 50%;
+	color: #122db0;
+}
+
+
+
+.leftListBar {
+	display: none;
+    margin-left: 5px;
+
+}
+.leftHeading {
+    background: #acacac;
+    padding: 5px;
+}
+
+#mainList {
+    margin: 10px;
+    margin-left: 180px;
+}
+
+/* Footer */
+#footer {
+	color: #ac0505;
+	background: #caced1;
+	clear: both;
+	text-align: center;
+	font-size: 92%;
+	height: 20px;
+}
+
+#footer p {
+	padding: 3px 0;
+	margin: 0;
+}
+#footer a {
+	color: #7c0505;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #303030;
+	text-decoration: underline;
+}
+
+#PopUpReminder {
+	background: #ededed;
+	padding: 3px;
+	vertical-align: top;
+	border: 1px solid red;
+}
+#PopUpReminder h3{
+	margin: 3px;
+	color: #ac0505;
+
+}
+#PopUpReminder p{
+	color: #292929;
+
+}
+
+.disabledReminder{
+	font-size: 80%;
+	border: 1px solid #797979;
+	background: #333333;
+	background: #acacac;
+	color: #efefef;
+	cursor: pointer;
+	height: 12px;
+	padding: 1px 3px 5px 3px;
+	margin: 1px 0px 0px 0px;
+}
+
+.gotReminder, .clipReminder,.reminderPortlet {
+	font-size: 80%;
+	border: 1px solid #797979;
+    background: #333333 url(/images/reminderBackground.png) repeat-x;
+	color: #efefef;
+	cursor: pointer;
+	min-height: 12px;
+	padding: 3px 3px 2px 3px;
+	margin: 1px 0px 0px 0px;
+	max-height: 48px;
+	max-width: 220px;
+	overflow: hidden;
+}
+
+.reminderRpt {
+	font-size: 10pt;
+	border: 1px solid #797979;
+	background: #333333 url(/images/repeatReminderBackground.png) repeat-x;
+	color: #efefef;
+	cursor: pointer;
+	min-height: 12px;
+	padding: 3px 3px 2px 3px;
+	margin: 1px 0px 0px 0px;
+	max-height: 18px;
+	overflow: hidden;
+}
+
+
+
+.reminderPortlet {
+	width: 90%;
+	text-align: center;
+	margin: 2px;
+	}
+
+.gotReminderEdit{
+	height: 200px;
+	width: 100px;
+}
+
+.ui-draggable-dragging {
+	color: ffffe0;
+	border: 1pz solid #292929;
+	width: 150px;
+	z-index: 9999;
+}
+
+.smallForm {
+	text-align: center;
+	margin: 0;
+	padding: 10px 30px 0 0;
+	width: 320px;
+	height: 140px;
+	background: url(/images/formBack.png)no-repeat;
+}
+
+.emailInput{
+	font-size: 14pt;
+	width: 300px;
+	margin: 0 0 0 10px;
+}
+
+.logon{
+	font-size: 14pt;
+	width: 160px;
+	margin: 0;
+}
+
+.paddingNote{
+	margin-left: 50px;
+}
+
+
+#subMain {
+	width: 90%;
+	border: 1px solid #acacac;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	}
+
+#subMain input {
+	font-size: 105%;
+	color: #122db0;
+	}
+
+
+#reminderEditor {
+	font-size: 110%;
+	width: 400px;
+	height: 450px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#reminderEditor #rmLeft{
+	width: 45%;
+	float: left;
+}
+
+#reminderEditor #rmRight{
+	width: 45%;
+	float: Right;
+}
+#reminderEditor fieldset, #reminderEditor h3{
+	width: 390px;
+}
+
+#reminderEditor fieldset fieldset{
+	margin: 5px;
+	padding: 10px;
+	width: 350px;
+	border: 1px solid #e6e6e6;
+	background: #fafafa;
+	text-align: center;
+}
+
+#reminderEditor label{
+	color: #ac0505;
+	margin: 5px;
+	font-size: 110%;
+}
+
+#reminderEditor #rmDesc,#reminderEditor #rmNotes{
+	width: 350px;
+	margin: 10px 20px 10px 20px;
+	font-size: 110%;
+	border: 1px solid #cdcdcd;
+	padding: 2px;
+}
+
+
+#reminderEditor #rmPeriod,#reminderEditor #rmDate,#reminderEditor #rmTime{
+	width: 120px;
+	margin: 10px 20px 10px 20px;
+	font-size: 110%;
+	border: 1px solid #cdcdcd;
+	padding: 2px;
+}
+
+#fancybox-close {
+	background: none;
+}
+
+.buttonHolder{
+	padding: 5px;
+}
+
+.fg-button {
+   outline: 0;
+   margin:0 4px 0 0;
+   padding: .5em .5em .2em .5em;
+   text-decoration:none !important;
+   cursor:pointer;
+   position: relative;
+   text-align: center;
+   zoom: 1;
+   font-size: 120%;
+   }
+.fg-button:hover {
+	background: #dadada;
+}
+
+#year table, #year{
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0px 0px 5px 0px;
+}
+#year table td{
+	border: 1px solid #dcdcdc;
+}
+
+.monthHeader{
+	background: #cdcdcd;
+	text-align: center;
+	color: #ac0505;
+}
+.gotRmDay ,.gotRmDayRpt {
+	background: #aaaaaa;
+}
+.disabledRmDay ,.gotRmDayRpt {
+	background: #dedede;
+	border: 1px solid #787878;
+}
+/* Year View */
+#yearViewCalendar{
+	margin-right: 205px;
+	height: 100%;
+}
+
+#yearViewCalendar table{
+	background: #ffffff;
+	color: #585858;
+	width: 99%;
+	margin: 5px;
+	border-collapse: collapse;
+}
+
+#yearViewCalendar table td{
+	border: 1px solid #dcdcdc;
+	padding: 2px;
+	text-align: center;
+}
+
+#yearViewCalendar table td.gotRmDay{
+	background: #ac0505;
+	color: #ffffff;
+}
+#yearViewCalendar table td.spacer{
+	border: none;
+}
+
+#ie-alert{
+    margin: 20px 100px 0px 100px;
+    font-size: 120%;
+    border: 1px solid #dcdcdc;
+    text-align: left;
+    height: 450px;
+}
+#ie-alert div{
+    margin: 10px;
+    border: 1px solid #dcdcdc;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+#ie-alert img.round{
+    height: 64px;
+}
+
+
+#monthListTable,#yearListTable{
+	border-collapse: collapse;
+	position: absolute;
+	top: 30px;
+	left: 40%;
+	z-index: 10;
+	width: 80px;
+	display: none;
+}
+#yearListTable{
+	margin-left: 108px;
+}
+
+#monthListTable td, #yearListTable td{
+	background: #333333 url(/images/reminderBackground.png) repeat-x;
+	color: #efefef;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #292929;
+	width: 80px;
+	text-align: center;
+}
+
+.calNavigation:link {
+	color: #ffffe0;
+}
+.calNavigationCurrent:link {
+	color: #ffffe0;
+	font-weight: bold;
+}
+.shadow {
+	-moz-box-shadow: 3px 3px 4px #292929;
+	-webkit-box-shadow: 3px 3px 4px #292929;
+	box-shadow: 3px 3px 4px #292929;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#292929')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#292929');
+}
+
+#reminderPlan {
+    margin: 5px 220px 10px 220px;
+}
+#reminderPlanMin {
+    margin: 5px 10px 10px 10px;
+}
+
+#reminderPlan table ,#reminderPlanMin table{
+    width: 95%;
+    border-collapse: collapse;
+    font-size: 120%;
+}
+
+#reminderPlan table th,#reminderPlanMin table th{
+    border: 1px solid #dcdcdc;
+    background: #efefef;
+    color: #122db0;
+    padding: 2px;
+    font-size: 120%;
+}
+
+#reminderPlan table td, #reminderPlanMin table td{
+    border: 1px solid #979797;
+    padding: 2px;
+}
+
+td.dateSection{
+    color: #fefefe;
+    background: #122db0;
+    font-size: 120%;
+}
+
+td.sentReminder{
+    color: #122db0;
+}
+td.pre_due
+{
+    padding: 2px 5px 2px 5px;
+	color: black;
+	background: #adadff;
+	border-color: #acacac;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+}
+
+td.pre_tomorrow
+{
+    padding: 2px 5px 2px 5px;
+	color: black;
+	background: #dadaff;
+	border-color: #acacac;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+}
+
+td.pre_week
+{
+    padding: 2px 5px 2px 5px;
+	color: black;
+	background: #dadada;
+	border-color: #acacac;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+}
+
+td.pre_fortnight
+{
+    padding: 2px 5px 2px 5px;
+	color: black;
+	background: #fffff0;
+	border-color: #acacac;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+}
+
+td.pre_month
+{
+    padding: 2px 5px 2px 5px;
+	color: black;
+	background: #ffffff;
+	border-color: #acacac;
+	border-style: solid;
+	border-width: 1px;
+	text-align: left;
+}
+

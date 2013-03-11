@@ -1,0 +1,709 @@
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {height: 100%;
+	background: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	font-family: helvetica,arial,sans-serif;
+	color: #666;
+	min-width: 993px;
+	min-height: 600px;
+	}
+/* Element Defaults */
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin: .3em 0;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: .4em 0;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: .5em 0;
+  margin: 3px;
+}
+
+h4 {
+  display: block;
+  font-weight: bold;
+  margin: 1.33em 0;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  font-weight: bold;
+  margin: 1.67em 0;
+}
+
+h6 {
+  display: block;
+  font-size: 0.67em;
+  font-weight: bold;
+  margin: 2.33em 0;
+}
+
+/* my defaults */
+
+
+p {
+	padding: 5px;
+}
+#sectionTitle {
+	font-size: 1.5em;
+}
+
+legend{
+	border: 1px solid #909090;
+	color:  #292929;
+	padding: 2px 10px 2px 10px;
+	background: url(/auth/authCSS/images/legendBack.png);
+	margin-left: 10px;
+
+}
+
+/********************/
+/* Main page Layout */
+/********************/
+
+#maincontent {
+	position:relative;
+	text-align:left;
+	width:100%;
+	min-height: 500px;
+	display: block;
+	}
+#wrapperBody {
+	min-height: 100%;}
+#wrapperfooter {
+	overflow:auto;
+	padding-bottom: 150px;
+	}
+#footer {
+	position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;
+	padding: 15px 0px 15px 0px;
+	text-align: center;
+	background: url(images/authFooter_warm_70.png);
+	color: #cdcdcd;
+	}
+#menu {
+	background: url(images/authMenuBackground_warm_30.png);
+	height: 30px;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	color: #efefef;
+	font-size: 80%;
+	}
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	}
+#menu li {
+	display: inline-block;
+	float: left;
+	margin: 0px;
+	padding: 8px 40px 0px 40px;
+	height: 22px;
+	background: url(images/authMenuSeparation_warm.png) right no-repeat;
+	}
+#menu li a{
+	color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	}
+
+#menu li:hover {
+	background: url(images/authMenuSelected_warm.png) right no-repeat;
+	text-decoration: underline;
+	}
+#header {
+	background: url(images/authHeaderWatermark_warm_70.png);
+	height: 70px;
+	padding: 0px;
+	margin: 0px;
+	color: #ffffff;
+	position: relative;
+	}
+#header #logo {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-size: 140%;
+}
+#header #tagline {
+	position: absolute;
+	bottom: 15px;
+	left: 20px;
+	font-size: 80%;
+}
+
+
+#maincolumn {
+	position:relative;
+	margin:0;
+	padding:10px;
+	border: 1px solid #9a9a9a;
+	min-width: 800px;
+	}
+#leftcolumn {
+    text-align: center;
+    font-size: 130%;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	float: left;
+	width: 170px;
+	min-height: 400px;
+	margin: 5px 0px 0px 2px;
+	padding: 5px;
+	background:#f5f5f5;
+	border: 1px solid #9a9a9a;
+	z-index:100;
+	}
+#rightcolumn {
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	width: 190px;
+	min-height: 400px;
+	margin: 5px 0px 0px 2px;
+	padding: 5px;
+	background: #f5f5f5;
+	border: 1px solid #9a9a9a;
+	z-index:99;
+	}
+#rightcolumn hr{
+	border-color: #bababa;
+}
+#centercolumn {
+    font-size: 100%;
+	margin: 0px;
+	min-width: 610px;
+	}
+/*#centercolumn a:link,#centercolumn a:active	,#centercolumn a:visited,#centercolumn a:hover{
+	color: #292929;
+}
+*/
+
+
+
+
+
+/*Left Panel Navigation */
+
+
+
+
+/* The right hand panel styling */
+
+#sidebar {
+	font-size: 80%;
+	padding: 10px;
+	border: 1px solid #acacac;
+	color: #454545;
+	background: #ffffff;
+}
+#sidebar h3 {
+	color: #ac0505;
+}
+
+#sidebar p{
+	padding: 10px 10px 30px 10px;
+}
+#sidebar hr{
+	margin: 0px 0px 30px 0px;
+}
+#sidebar a{
+	color: #454545;
+	text-decoration: none;
+}
+#sidebar a{
+	color: #454545;
+	text-decoration: underline;
+}
+
+/* Login panel */
+
+#loginHolder{
+    text-align: center;
+    border: 1px solid #979797;
+    background: url(/images/loginbg_fbor.png);
+    width: 700px;
+    height: 300px;
+    position: relative;
+    margin: 20px 0px 0px 50px;
+}
+#loginFooter{
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    width: 700px;
+    font-size: 120%;
+    margin: 20px 0px 0px 50px;
+}
+#loginBody {
+
+	margin: 40px 20px 50px 20px;
+	padding: 0px;
+	width: 300px;
+	height: 200px;
+    font-size: 120%;
+	color: #ffffff;
+	text-align: center;
+    position: absolute;
+    left: 5px
+}
+#fbLoginBody {
+	margin: 40px 20px 50px 20px;
+	padding: 0px;
+	width: 300px;
+	height: 200px;
+    font-size: 120%;
+	color: #ffffff;
+	text-align: center;
+    position: absolute;
+    right: 5px;
+}
+#fbMessage {
+	margin: 40px 20px 50px 20px;
+	padding: 0px;
+	width: 640px;
+	height: 200px;
+    font-size: 120%;
+	color: #ffffff;
+	text-align: center;
+    position: absolute;
+    right: 5px;
+    background: #3B5998
+}
+#fbMessage h1,#fbMessage h3{
+    color: #ffffff;
+}
+
+#loginBody fieldset {
+	margin: 5px 5px 5px 5px;
+	padding: 10px 30px 10px 30px;
+	width: 230px;
+	height: 180px;
+	color: #272727;
+	text-align: left;
+	border: 1px solid #989898;
+	background: #dedede;
+}
+#fbLoginBody fieldset {
+	margin: 15px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	width: 280px;
+	height: 180px;
+	color: #ffffff;
+	text-align: left;
+	border: 1px solid #989898;
+	background: #3B5998 url(/images/facebook.png) 15px 10px no-repeat;
+	text-align: center;
+}
+
+#fbLoginBody fieldset p{
+    font-size: 120%;
+}
+#loginBody label {
+    font-size: 130%;
+}
+
+#loginBody legend {
+    margin-left: 0px;
+}
+
+#loginBody input.logon{
+	color: #434343;
+	font-size: 110%;
+	width: 200px;
+	border: 1px solid #591e1e;
+	padding: 2px 2px 2px 5px;
+	margin: 5px 0px 10px 0px;
+}
+
+#loginBody .button{
+	color: #989898;
+	padding: 2px 5px 2px 40px;
+}
+
+.bubbleInfo {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    display: none; /* keeps the popup hidden if no JS available */
+}
+
+/* New User Details Update */
+
+#userAdd {
+	margin: 3px 240px 3px 3px;
+	padding: 0px 0px 0px 50px;
+	background: #ffffff;
+	color: #272727;
+	text-align: left;
+	border: 1px solid #979797;
+	font-size: 130%;
+	min-height: 410px;
+}
+
+#userAdd fieldset.userDetails{
+	width: 90%;
+	min-width: 530px;
+	background: #dcdcdc;
+	margin: 10px 25px 10px 10px;
+	padding: 5px 20px 10px 20px;
+	float: left;
+}
+#userAdd fieldset.userDetailsSub{
+	width: 39%;
+	min-width: 250px;
+	min-height: 175px;
+	background: #dcdcdc;
+	margin: 10px 25px 10px 10px;
+	padding: 5px 10px 10px 20px;
+	float: left;
+}
+#userAdd fieldset.userDetailsBottom{
+	width: 86%;
+	min-width: 580px;
+	min-height: 175px;
+	background: #dcdcdc;
+	margin: 10px 25px 10px 10px;
+	padding: 5px 10px 10px 20px;
+	float: left;
+}
+#userAdd legend{
+	border: 1px solid #909090;
+	font-weight: bold;
+	font-size: 110%;
+	color:  #292929;
+	padding: 5px 10px 2px 10px;
+	background: url(/auth/authCSS/images/legendBack.png);
+	margin-left: 10px;
+	}
+#userAdd label{
+	margin: 2px;
+	width: 50px;
+	display: inline-block;
+}
+
+#userAdd .buttons {
+	width: 90%;
+	text-align: center;
+	margin: 10px auto 0px auto;
+	border: none;
+}
+#userAdd input.text, #userAdd input.password{
+	color: #122db0;
+	font-size: 110%;
+	width: 510px;
+	border: 1px solid #591e1e;
+	padding: 2px 2px 2px 5px;
+	margin: 2px 2px 10px 15px;
+}
+#userAdd input.textSml, #userAdd input.password,#userAdd input.passwordConf{
+	color: #122db0;
+	font-size: 110%;
+	width: 200px;
+	border: 1px solid #591e1e;
+	padding: 2px 2px 2px 5px;
+	margin: 2px 2px 10px 15px;
+}
+#userAdd input.username,#userAdd input.passwordConf,#userAdd input.email{
+	font-size: 110%;
+	border: none;
+	padding: 0px;
+	margin: 0px 0px 0px 5px;
+	width: 175px;
+}
+#userAdd input.password{
+	font-size: 110%;
+	width: 210px;
+}
+#userAdd input.email{
+	font-size: 110%;
+	width: 480px;
+}
+#userAdd input.errorField {
+	font-size: 110%;
+	background: #ac0505;
+	color: #efefef;
+	font-weight: bold;
+}
+#userAdd button{
+	color: #989898;
+	font-size: 110%;
+	padding: 2px 5px 22x 5px;
+}
+#userAdd .inputHolder,#userAdd .inputHolderLarge {
+	display: inline-block;
+	color: #122db0;
+	width: 207px;
+	border: 1px solid #591e1e;
+	padding: 0px;
+	margin: 2px 2px 10px 15px;
+	padding: 2px 2px 2px 5px;
+	background: #ffffff;
+}
+#userAdd .inputHolderLarge {
+	width: 507px;
+}
+#userAdd .checkImage {
+	display: inline;
+}
+/* User Details Update */
+
+#userEdit {
+    font-size: 130%;
+	margin: 3px 240px 3px 3px;
+	padding: 0px 0px 0px 50px;
+	max-width: 950px;
+	min-width:605px;
+	min-height: 410px;
+	background: #ffffff;
+	color: #272727;
+	text-align: left;
+	border: 1px solid #979797;
+}
+
+#userEdit fieldset.userDetails{
+	width: 40%;
+	float: left;
+	background: #dcdcdc;
+	margin: 10px 45px 10px 10px;
+	padding: 5px 20px 10px 20px;
+}
+#userEdit fieldset.changePassword{
+	width: 30%;
+	float: left;
+	background: #dcdcdc;
+	margin: 10px 45px 10px 10px;
+	padding: 5px 20px 10px 20px;
+}
+#userEdit fieldset.userDetails legend, #userEdit fieldset.changePassword legend{
+	border: 1px solid #909090;
+	font-weight: bold;
+	font-size: 110%;
+	color:  #292929;
+	padding: 5px 10px 2px 10px;
+	background: url(/auth/authCSS/images/legendBack.png);
+	margin-left: 10px;
+	}
+
+#userEdit label{
+	margin: 10px 10px 10px 5px;
+}
+
+#userEdit .buttons {
+	width: 90%;
+	text-align: center;
+	margin: 10px auto 0px auto;
+	border: none;
+}
+#userEdit input.text, #userEdit input.password{
+	color: #122db0;
+	font-size: 110%;
+	width: 80%;
+	border: 1px solid #591e1e;
+	padding: 2px 2px 2px 5px;
+	margin: 2px 2px 20px 15px;
+}
+#userEdit input.password{
+	width: 200px;
+}
+#userEdit input.errorField {
+	background: #ac0505;
+	color: #efefef;
+	font-weight: bold;
+}
+#userEdit button{
+	color: #989898;
+	font-size: 110%;
+	padding: 2px 5px 22x 5px;
+}
+
+#userEdit .checkImage {
+	display: inline;
+	clear: both;
+}
+#info {
+	padding: 20px;
+}
+#info h2, #info h3 {
+	color: #ac0505;
+}
+
+#info p{
+    font-size: 120%;
+}
+#info legend{
+	border: 1px solid #909090;
+	font-weight: bold;
+	font-size: 110%;
+	color:  #292929;
+	padding: 5px 10px 2px 10px;
+	background: url(/auth/authCSS/images/legendBack.png);
+	margin-left: 10px;
+	}
+
+#info fieldset.recovery{
+	font-size: 110%;
+	float: left;
+	background: #dcdcdc;
+	margin: 10px 45px 10px 10px;
+	padding: 5px 20px 10px 20px;
+}
+
+.tooltip{
+	display:none;
+	background:transparent url(/js/tooltip/black_arrow_sml.png) no-repeat;
+	font-size: 100%;
+	height:76px;
+	width:179px;
+	padding:20px 15px 20px 15px;
+	color:#efefef;
+	z-index:101;
+	text-align: center;
+}
+
+.tooltipu{
+	display:none;
+	background:transparent url(/js/tooltip/black_arrow_smlu.png) no-repeat;
+	height:46px;
+	width:179px;
+	padding:30px 15px 10px 15px;
+	color:#efefef;
+	z-index:101;
+	text-align: center;
+}
+
+.tooltipe{
+	display:none;
+	background:transparent url(/js/tooltip/black_arrow_smlue.png) no-repeat;
+	height:46px;
+	width:179px;
+	padding:30px 15px 10px 15px;
+	color:#efefef;
+	z-index:101;
+	text-align: center;
+}
+
+.tooltip h3{
+padding: 0px;
+margin: 0px 0px 5px 0px;
+color: #ffffe0;
+
+}
+
+/* Recovery */
+
+fieldset.recovery {
+	margin: 5px;
+	padding: 5px;
+	width: 500px;
+	background: #f2f2f2;
+	color: #272727;
+	text-align: left;
+	border: 1px solid #979797;
+}
+fieldset.recoverySml {
+	width: 350px;
+	margin: 10px 10px 10px 100px;
+}
+
+
+.recovery #email{
+	width: 90%;
+	color: #122db0;
+	font-size: 110%;
+	border: 1px solid #591e1e;
+	padding: 2px 2px 2px 5px;
+	margin: 2px 2px 20px 15px;
+}
+.recoverySml .password{
+	color: #122db0;
+	font-size: 95%;
+	width: 50%;
+	border: 1px solid #591e1e;
+	padding: 2px 2px 2px 5px;
+	margin: 2px 2px 20px 40px;
+}
+#emailSend{
+	margin-left: 190px;
+}
+
+.recovery .buttons{
+	margin: 2px  2px 2px 110px;
+}
+#myNavigation {
+	border: 1px solid #dfdfdf;
+	background: #eaeaea;
+	margin: 2px;
+	padding: 2px;
+	width: 95%;
+	text-align: left;
+	}
+#myNavigationTop {
+	border: 1px solid #dfdfdf;
+	background: #ffffff;
+	margin: 2px;
+	padding: 2px;
+	width: 95%;
+	}
+#myNavigation ul li{
+	display: inline-block;
+	}
+
+#myNavigation ul li a:link{
+	color: #2727ac;
+	text-decoration: none;
+	background: url(/auth/authCSS/images/legendBack.png);
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	margin: 1px 2px 1px 2px;
+	width: 125px;
+	border: 1px solid #cacaca;
+	}
+
+#myNavigation ul li a:visited{
+	color: #2727aa;
+	text-decoration: none;
+	border: 1px solid #cacaca;
+	}
+#myNavigation ul li a:hover{
+	color: #2727ac;
+	background: #cfcfcf;
+	background-image:none
+	text-decoration: underline;
+	border: 1px solid #cacaca;
+	}
+#myNavigation ul li a:active{
+	color: #aa2727;
+	text-decoration: none;
+	border: 1px solid #cacaca;
+	}
+
+#centercolumnText {
+    padding: 10px;
+}
